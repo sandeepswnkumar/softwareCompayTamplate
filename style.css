@@ -161,13 +161,13 @@ nav{
     background-size: cover;
 }
 #appDev{
-    background-image: url("img/android.jpg");
+    background-image: url("android.jpg");
 }
 #webDev{
-    background-image: url("img/webdev.jpg");
+    background-image: url("webdev.jpg");
 }
 #blkemail{
-    background-image: url("img/blkemail.png");
+    background-image: url("blkemail.png");
 }
 .service-text{
     font-family: 'Source Sans Pro', sans-serif;
