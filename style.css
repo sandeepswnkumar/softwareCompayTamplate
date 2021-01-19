@@ -203,31 +203,31 @@ nav{
     background-position: center;
 }
 #appDev{
-    background-image: url("img/android.png");
+    background-image: url("/android.png");
 }
 #webDev{
-    background-image: url("img/webdev.jpg");
+    background-image: url("/webdev.jpg");
 }
 #blkemail{
-    background-image: url("img/blkemail.jpg");
+    background-image: url("/blkemail.jpg");
 }
 #schoolERP{
-    background-image: url("img/schoolMS.png");
+    background-image: url("/schoolMS.png");
 }
 #AMC{
-    background-image: url("img/AMC.jpg");
+    background-image: url("/AMC.jpg");
 }
 #eTender{
-    background-image: url("img/eTendering.jpg");
+    background-image: url("/eTendering.jpg");
 }
 #epfoServices{
-    background-image: url("img/epfo.jpg");
+    background-image: url("/epfo.jpg");
 }
 #dSignature{
-    background-image: url("img/dSignature.jpg");
+    background-image: url("/dSignature.jpg");
 }
 #onlineSM{
-    background-image: url("img/onlineS.jpg");
+    background-image: url("/onlineS.jpg");
 }
 
 .service-text{
