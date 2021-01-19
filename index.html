@@ -38,36 +38,54 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="bg-light collapse  navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                    <li class="m-auto nav-item ">
-                        <a class="nav-link text-dark fw-bold" href="#">HOME</a>
+                <ul id="navUl" class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="m-auto nav-item">
+                        <a class="nav-link text-dark fw-bold" href="#home">HOME</a>
                     </li>
                     <li class="nav-item m-auto">
-                        <a class="nav-link text-dark fw-bold" href="#">ABOUT US</a>
+                        <a class="nav-link text-dark fw-bold" href="#aboutUs">ABOUT US</a>
                     </li>
                     <li class="nav-item m-auto">
-                        <a class="nav-link text-dark fw-bold" href="#">SERVICES</a>
+                        <a class="nav-link text-dark fw-bold" href="#our-service">SERVICES</a>
                     </li>
                     <li class="nav-item m-auto">
                         <a class="nav-link text-dark fw-bold" href="#">OUR CLINET</a>
                     </li>
                     <li class="nav-item m-auto">
-                        <a class="nav-link text-dark fw-bold" href="#">GET IN TOUCH</a>
+                        <a class="nav-link text-dark fw-bold" href="#contact">GET IN TOUCH</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+
+    
     <section id="home">
         <div id="main-txt" class="main-item">
             <h1 class="fw-bold">Grow Your Business with<br></h1>
-            <h3>Smile Computer</h3>
+            <h3 class="fw-bold">Smile Computer</h3>
             <p>We are team of talented developer making website and mobile applications and many more services.</p>
         </div>
         <div id="main-img" class="main-item">
-            <img src="growbussinss.png" alt="Grow Your Business">
+            <img src="img/growbussinss.png" alt="Grow Your Business">
         </div>
     </section>
+
+    <!-- <hr style="width: 90%;" class="featurette-divider m-auto"> -->
+
+    <div id="aboutUs"class="">
+        <div id="aboutIMG" class="about-item">
+            <img src="img/aboutus.jpg" alt="">      
+        </div>
+        <div class="about-item">
+            <h2 class="featurette-heading fw-bold" style="color: teal;">Smile Computer</h2>
+            <p class="lead" style="text-align: justify;">Smile Computer is a professional software, website development company based in Siwan Bihar that endeavor on highly proficient, timely delivered and cost effective software, website development services. We are highly experienced in offering offshore software development and project management. Some of our services include Strategic Technology Consulting, System Integration & Software Development, Enterprise Resource Planning (ERP), Client server application, E-commerce software development, Web application development, E-Commerce development,Smart Classes For Smart School, Online Learning Materials. In a short span of time Perfect Software Solution has developed business relationship with a reputed clientele all over the our area. Today, we provide services, support and solutions to clients in various Industry verticals. A few from the industry verticals that we work closely are cutting edge technology companies institutions, educational institutions, financial sectors.</p>
+        </div>
+
+    </div>
+
+    <hr style="width: 90%;" class="featurette-divider m-auto">
 
     <section id="our-service">
         <div id="service-head">
@@ -100,31 +118,11 @@
             </div>
         </div>
         <div id="viewm">
-            <a href="service.html" class="viewbtn" target="_blank">View More</a>
+            <a href="service.html" class="viewbtn">View More</a>
         </div>
     </section>
 
-    <hr style="width: 90%;" class="featurette-divider m-auto">
-
-    <div class="row featurette container m-auto align-items-center mt-5 mb-5">
-        <div class="col-md-5 col-xl-6">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
-                    dy=".3em">500x500</text>
-            </svg>
-
-        </div>
-        <div class="col-md-7 col-xl-6">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-                semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-                commodo.</p>
-        </div>
-
-    </div>
+    
     <section id="contact">
         <div class="section-content">
             <h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s"
@@ -143,7 +141,7 @@
                     </div>
                     <div class="col-md-6">
                         <label for="inputMobile" class="form-label">Contact No.</label>
-                        <input type="number" placeholder="Enter Your Contact No." class="form-control" id="inputName">
+                        <input type="tel" placeholder="Enter Your Contact No." class="form-control" id="inputName">
                     </div>
                     <div class="col-md-6">
                         <label for="inputSubject" class="form-label">Subject</label>
@@ -202,7 +200,7 @@
                         </a>
                     </div>
                 </div>
-                
+
             </div>
             <div class="foot-item" id="foot-item-3">
                 <div class="footInner d-flex flex-column m-auto" id="news-letter">
@@ -212,7 +210,7 @@
                         <button class="mx-auto">Subscribe</button>
                         <p class="m-auto">We don’t spam</p>
                     </form>
-                    
+
                 </div>
             </div>
             <div class="foot-item" id="foot-item-4">
