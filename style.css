@@ -21,6 +21,20 @@ li{
 nav{
     height: 70px;
 }
+/* #navUl li{
+    height: 10px;
+} */
+#navUl li a{
+    border-bottom: 1px solid transparent;
+    margin: 0px 20px;
+    padding: 0px 0px;
+    transition: 0.7s;
+}
+#navUl li a:hover{
+    color: red!Important;
+    border-bottom: 1px solid red;
+
+}
 
 
 .logo{  
@@ -41,7 +55,8 @@ nav{
     width: 100%;
     height: 650px;
 }
-#home .main-item{
+
+.main-item{
     margin: 20px;
     width: 50%;
 }
@@ -52,7 +67,7 @@ nav{
     padding-left:80px ;
 }
 #main-txt h1{
-    font-size: 3vw;
+    font-size: 36px;
     font-family: 'Recursive', sans-serif;
     
     
@@ -77,11 +92,19 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -1;
 }
 #main-img img{
     height: 450px;
+    animation-name: growBusiness;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    /* animation-direction: reverse; */
 }
-
+@keyframes growBusiness {
+    from {transform:translateY(20px);}
+    to {transform:translateY(0px);}
+}
 /*Contact sectiom*/
 .content-header{
     font-family: 'Oleo Script', cursive;
@@ -115,6 +138,24 @@ nav{
       }
   }
 
+
+/* aboutUs */
+#aboutUs{
+    padding: 0px 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-item{
+    width: 50%;
+    margin: 20px 20px;
+}
+.about-item img{
+    width: 100%;
+    height: 400px;
+}
 
 
 
@@ -159,16 +200,36 @@ nav{
     height: 50%;
     width: 100%;
     background-size: cover;
+    background-position: center;
 }
 #appDev{
-    background-image: url("android.jpg");
+    background-image: url("img/android.png");
 }
 #webDev{
-    background-image: url("webdev.jpg");
+    background-image: url("img/webdev.jpg");
 }
 #blkemail{
-    background-image: url("blkemail.png");
+    background-image: url("img/blkemail.jpg");
 }
+#schoolERP{
+    background-image: url("img/schoolMS.png");
+}
+#AMC{
+    background-image: url("img/AMC.jpg");
+}
+#eTender{
+    background-image: url("img/eTendering.jpg");
+}
+#epfoServices{
+    background-image: url("img/epfo.jpg");
+}
+#dSignature{
+    background-image: url("img/dSignature.jpg");
+}
+#onlineSM{
+    background-image: url("img/onlineS.jpg");
+}
+
 .service-text{
     font-family: 'Source Sans Pro', sans-serif;
     height: 50%;
@@ -258,13 +319,109 @@ nav{
     flex-wrap: wrap;
     margin-bottom: 10px;
 }
-@media screen and (max-width: 1249px){
-    #foot-top{
-        padding: 0px 60px;
+@media only screen and (max-width: 767px){
+    #contact{
+      height: 720px;
     }
+}
+@media screen and (min-device-width: 800px) and (max-device-width: 959px){
+    #foot-top{
+        padding: 0px 20px;
+    }
+}
+@media screen and (min-device-width: 300px) and (max-device-width: 991px){
+    #navUl li a{
+        padding: 5px 0px;
+    }
+    #navUl{
+        z-index: -1;
+    }
+}
+@media screen and (min-device-width: 300px) and (max-device-width: 589px){
+    #main-txt h1{
+        font-size: 28px;
+    }
+    #main-img img {
+        height: 250px!Important;
+    }
+    #main-txt p{
+        padding-right: 0px!Important;
+    }
+    #foot-design h4{
+        font-size: 15px;
+        text-align: center;
+        padding: 0px 10px;
+    }
+    #mainFooter{
+        height: 1160px!Important;
+    }
+    .foot-item{
+        margin: auto;
+        width: 100%!Important;
+    }
+    #foot-top{
+        width: 100%;
+        display: flex;
+        padding: 0px 90px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    
+    }
+    #foot-item-4{
+        display: block!Important;
+    }
+    #foot-item-4 h4{
+        text-align: center;
+    }
+    #foot-item-4 iframe{
+        margin: 0px -30px;
+        width: 250px;
+        height: 210px;
+    }
+
+    #foot-item-3{
+        width: 100%;
+        height: 220px!Important;
+    }
+    #news-letter{
+       height: 60px;
+       align-items: center;
+       justify-content: space-between;
+    }
+    #newLetterForm{
+        display: flex!Important;
+        align-items: center!Important;
+        flex-direction: column;
+    }
+    #newLetterForm input,#newLetterForm button,#newLetterForm p {
+        margin: 10px!Important;
+    }
+
+
+
+
+
   }
 
   @media screen and (max-width: 1190px){
+    .about-item{
+        width: 100%;
+    }
+    #aboutIMG{
+        display: flex;
+        justify-content: center;
+
+    }
+    .about-item img{
+        width: 90%;
+        height: 50%;
+    }
+    #aboutUs{
+        flex-direction: column;
+    }
+
+
     #foot-item-4{
         display: none;
     }
@@ -322,6 +479,9 @@ nav{
 @media only screen and (min-device-width: 300px) and (max-device-width: 720px){
 
      /* For portrait layouts only */
+     .main-item{
+        margin: 20px 0px;
+     }
     #home{
         flex-direction: column-reverse;
         height: 580px;
