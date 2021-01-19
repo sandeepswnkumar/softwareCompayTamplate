@@ -1,299 +1,232 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
     <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <title>Services</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5431d058c7.js" crossorigin="anonymous"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+
+
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Smile Computer</title>
+
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-
-        nav {
-            height: 100px;
-            width: 100%;
-            /* background: cadetblue; */
-            padding: 30px 0px;
-            display: flex;
-        }
-
-        #logo {
-            padding: 0px 50px;
-        }
-
-        #logo a {
-            text-decoration: none;
-        }
-
-        #logo img {
-            position: relative;
-            top: 5px;
-        }
-
-        #logo h2,
-        h4 {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        #logo h2 {
-            font-size: 25px;
-            letter-spacing: 3px;
-        }
-
-        #menu {
-            position: absolute;
-            right: 50px;
-        }
-
-        #menu ul {
-            display: flex;
-            list-style: none;
-        }
-
-        #menu ul li {
-            margin-right: 30px;
-        }
-
-        #menu li a {
-            font-weight: bold;
-            font-family: 'Source Sans Pro', sans-serif;
-            text-decoration: none;
-            color: black;
-            font-size: 18px;
-            border-bottom: 1px solid transparent;
-            transition: color 0.5s, border 0.5s;
-        }
-
-        #menu li a:hover {
-            border-bottom: 1px solid red;
-            color: red;
-
-        }
-
-        #our-service {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            flex-direction: column;
-            /* margin: 60px 0px; */
-        }
-
-        #service-head h3 {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 60px;
-            text-align: center;
-            margin: 10px 0px 20px 0px;
-        }
-
-        #service-main {
-            width: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            margin: 10px auto 60px auto;
+        #services {
+            padding: 20px;
         }
 
         .service-card {
-            margin:0px 10px 50px 10px;
-            height: 350px;
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0px 0px 8px 1px grey;
-            transition: all 0.5s;
-        }
-
-        .service-card:hover {
-            transform: scale(1.1, 1.1);
-        }
-
-        .service-image {
-            height: 50%;
-            width: 100%;
-            background-image: url("img/android.jpg");
-            background-size: cover;
-        }
-
-        .service-text {
-            font-family: 'Source Sans Pro', sans-serif;
-            height: 50%;
-            width: 100%;
-            padding: 8px 10px;
-            text-align: justify;
-            background-color: #fff1f3;
-        }
-
-        .service-text h3,
-        p,
-        button {
-            margin: 6px 0px;
-        }
-
-        .service-text button {
-            position: relative;
-            top: 30px;
-        }
-
-        .service-text h3 {
-            font-size: 25px;
-        }
-
-        .service-text p {
-            font-size: 15px;
-        }
-
-        .service-text button {
-            margin: 7px 5px;
-            width: 100px;
-            height: 35px;
-            cursor: pointer;
-            background-color: rgb(238, 165, 165);
-            outline: none;
-            border-radius: 10px;
-            border: none;
-        }
-
-        .service-text button:hover {
-            background-color: thistle;
-        }
-
-
-
-        footer {
-            width: 100%;
-            position: relative;
-            bottom: 0px;
-        }
-
-        #foot-design {
-            width: 100%;
-            height: 40px;
-            background-color: black;
-            color: white;
-            display: flex;
-            align-items: center;
-            font-size: 13px;
-            justify-content: center;
-            font-family: 'Source Sans Pro', sans-serif;
-            border: none;
-        }
-
-        #foot-design a {
-            text-decoration: none;
-            color: tomato;
+            margin: 0px 15px;
         }
     </style>
+
+
+
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div id="logo">
-                <a href="">
-                    <h2>SM!LE<img src="img/logo.png" alt="Smile" width="30x" height="25px"></h2>
-                    <h4>Software Solution</h4>
-                </a>
-            </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="/index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="service.html">SERVICES</a></li>
-                    <li><a href="client.html">OUR CLIENT</a></li>
-                    <li><a href="contact.html">GET IN TOUCH</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="logo navbar-brand fw-bold" href="#">Smile Computer</a>
+            <button id="navBtn" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="ture"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="bg-light collapse  navbar-collapse" id="navbarSupportedContent">
+                <ul id="navUl" class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="m-auto nav-item">
+                        <a class="nav-link text-dark fw-bold" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item m-auto">
+                        <a class="nav-link text-dark fw-bold" href="index.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item m-auto">
+                        <a class="nav-link text-dark fw-bold" href="#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item m-auto">
+                        <a class="nav-link text-dark fw-bold" href="#">OUR CLINET</a>
+                    </li>
+                    <li class="nav-item m-auto">
+                        <a class="nav-link text-dark fw-bold" href="#index.html">GET IN TOUCH</a>
+                    </li>
                 </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <section id="our-service">
-        <div id="service-head">
-            <h3>Services</h3>
+    <section id="services">
+        <div id="service-head" class="my-5">
+            <h3 class="fw-bold">Services</h3>
         </div>
         <div id="service-main">
-            <div id="card-1" class="service-card">
-                <div class="service-image"></div>
+            <div id="card-1" class="service-card mb-5">
+                <div id="appDev" class="service-image"></div>
                 <div class="service-text">
                     <h3>Android Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, enim.</p>
-                    <button>Get Details</button>
+                    <p>Our Android developer is responsible for developing applications for devices powered by the
+                        Android operating system.</p>
+                    <button style="top: 5px;">Get Details</button>
                 </div>
             </div>
-            <div id="card-2" class="service-card">
-                <div class="service-image"></div>
+            <div id="card-2" class="service-card mb-5">
+                <div id="webDev" class="service-image"></div>
                 <div class="service-text">
                     <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, enim.</p>
+                    <p>Our developer is the build and mainten websites and that's look great, work fast and perform well with a seamless user experience.</p>
+                    <button style="top: -15px;">Get Details</button>
+                </div>
+            </div>
+            <div id="card-3" class="service-card mb-5">
+                <div id="blkemail" class="service-image"></div>
+                <div class="service-text">
+                    <h3>Bulk E-mail</h3>
+                    <p>Bulk email is the act of sending one email campaign to a large group at once.</p>
                     <button>Get Details</button>
                 </div>
             </div>
-            <div id="card-3" class="service-card">
-                <div class="service-image"></div>
+            <div id="card-3" class="service-card mb-5">
+                <div id="schoolERP" class="service-image"></div>
                 <div class="service-text">
-                    <h3>Bulk E-mail</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, enim.</p>
-                    <button>Get Details</button>
+                    <h3>School Management System</h3>
+                    <p>School management system is an information system to manage school related data and transactions.</p>
+                    <button style="top: 5px;" >Get Details</button>
                 </div>
             </div>
-            <div id="card-4" class="service-card">
-                <div class="service-image"></div>
+            <div id="card-3" class="service-card mb-5">
+                <div id="AMC" class="service-image"></div>
                 <div class="service-text">
-                    <h3>Bulk E-mail</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, enim.</p>
-                    <button>Get Details</button>
+                    <h3 style="font-size: 20px;">Annual Maintenanace Contract</h3>
+                    <p>Annual Maintenance Contract is the term that relates the buyer and supplier.</p>
+                    <button >Get Details</button>
                 </div>
             </div>
-            <div id="card-5" class="service-card">
-                <div class="service-image"></div>
+            <div id="card-3" class="service-card mb-5">
+                <div id="eTender" class="service-image"></div>
                 <div class="service-text">
-                    <h3>Bulk E-mail</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, enim.</p>
-                    <button>Get Details</button>
+                    <h3>E-Tendering</h3>
+                    <p>E-Tendering means a tendering process where the contract documents are published electronically.</p>
+                    <button style="top: 6px;">Get Details</button>
                 </div>
             </div>
-            <div id="card-6" class="service-card">
-                <div class="service-image"></div>
+            <div id="card-3" class="service-card mb-5">
+                <div id="epfoServices" class="service-image"></div>
                 <div class="service-text">
-                    <h3>Bulk E-mail</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, enim.</p>
-                    <button>Get Details</button>
+                    <h3>EPFO Services</h3>
+                    <p>Employees Provident Fund (EPF) is a scheme in which retirement benefits are accumulated.</p>
+                    <button style="top: 6px;">Get Details</button>
                 </div>
             </div>
-            <div id="card-7" class="service-card">
-                <div class="service-image"></div>
+            <div id="card-3" class="service-card mb-5">
+                <div id="dSignature" class="service-image"></div>
                 <div class="service-text">
-                    <h3>Bulk E-mail</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, enim.</p>
-                    <button>Get Details</button>
+                    <h3>Digital Signature</h3>
+                    <p>Digital Signature is a process that guarantees that the contents of a message have not been altered in transit.</p>
+                    <button style="top: 5px;">Get Details</button>
                 </div>
             </div>
-            <div id="card-8" class="service-card">
-                <div class="service-image"></div>
+            <div id="card-3" class="service-card mb-5">
+                <div id="onlineSM" class="service-image"></div>
                 <div class="service-text">
-                    <h3>Bulk E-mail</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, enim.</p>
-                    <button>Get Details</button>
+                    <h3>Online Study Matarial</h3>
+                    <p>Accessing learning materials, that is, lecture slides, video lectures, shared assignments, and forum messages, is the most frequently performed online learning activity.</p>
+                    <button style="top: -12px;">Get Details</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div id="foot-top">
 
+
+
+
+    <footer id="mainFooter">
+
+        <div id="foot-top">
+            <div class="foot-item">
+                <div class="footInner">
+                    <h4>Office Address</h4>
+                    <p>Ramdev Nagar, Mahadeva<br>Siwan, Bihar<br>Pin - 841226</p>
+                </div>
+                <div class="footInner">
+                    <h4>Contact Info.</h4>
+                    <p>smilenrk@gmail.com<br>+91 79798 08088</p>
+                </div>
+            </div>
+            <div class="foot-item" id="foot-item-2">
+                <div class="footInner">
+                    <h4>Quick Links</h4>
+                    <ul class="px-md-0 ">
+                        <li><a style="color: #8f8f8f;" href="#">Career</a></li>
+                        <li><a style="color: #8f8f8f;" href="#">Investor</a></li>
+                        <li><a style="color: #8f8f8f;" href="#">Terms & Conditions</a></li>
+                        <li><a style="color: #8f8f8f;" href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footInner">
+                    <h4>Social links</h4>
+                    <div id="socialItem">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                        <a href="" target="_blank">
+                            <i class="fab fa-google-plus-square"></i>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="foot-item" id="foot-item-3">
+                <div class="footInner d-flex flex-column m-auto" id="news-letter">
+                    <h4>Newsletter</h4>
+                    <form id="newLetterForm" action="#">
+                        <input class="m-auto" type="text" placeholder="E-mail">
+                        <button class="mx-auto">Subscribe</button>
+                        <p class="m-auto">We don’t spam</p>
+                    </form>
+
+                </div>
+            </div>
+            <div class="foot-item" id="foot-item-4">
+                <div class="footInner">
+                    <h4>Map</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d894.7558456256642!2d84.35732363796602!3d26.228429774792478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3992fc1ce36d48f5%3A0x5b0343ec10bfc57e!2sShanti%20Institute%20Technical%20Degree%20College!5e0!3m2!1sen!2sin!4v1610192116375!5m2!1sen!2sin"
+                        width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+            </div>
         </div>
         <div id="foot-design">
-            <h3>Copyright &copy; All right reserved | This template is made by <a
-                    href="https://github.com/sandeepswnkumar" target="_blank">Sandeep Gupta</a></h3>
-
+            <h4 class="h6">Copyright &copy; 2020 All right reserved | This template is made by <a
+                    href="https://github.com/sandeepswnkumar" target="_blank">Sandeep Gupta</a></h4>
         </div>
     </footer>
+
 </body>
 
 </html>
